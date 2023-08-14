@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #fff;
+  --txt-color: #000;
+  --btn-color: #6d6d6d;
+  --effect-color: #808080;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Images/Background.jpg);
+  background-size: cover;
+  background-position-y: 100%;
+  height: 100vh;
+}
+
+.container > div {
+  background-color: transparent;
+  color: var(--bg-color);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--bg-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  width: 400px;
+  text-align: center;
+}
+
+.login-box {
+  display: block;
+}
+
+.signup-box {
+  display: none;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--btn-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form .remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+form .remember-forgot input[type="checkbox"] {
+  margin-top: -5px;
+}
+
+form .remember-forgot label {
+  margin-left: -110px;
+}
+
+form .i_aggree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+form .i_aggree input[type="checkbox"] {
+  margin-top: -5px;
+}
+
+form .i_aggree label {
+  margin-left: 5px;
+}
+
+form a {
+  color: #00c3ff;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+form a:focus {
+  color: var(--effect-color);
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--effect-color);
+}
+
+form .google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285F4;
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+form .google-signin i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form .google-signin:hover {
+  background-color: var(--effect-color);
+}
+
+form .dont-have-account {
+  font-size: 12px;
+}

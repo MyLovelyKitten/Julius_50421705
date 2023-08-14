@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <title>The Traveler - Travel Agency</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box" id="loginSection">
+            <h1>WELCOME BACK</h1>
+            <h4>Welcome back! Please enter your details.</h4>
+            <form action="process_login.php" method="post" onsubmit="return redirectToLandingPage()">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+
+                <div class="remember-forgot">
+                    <input type="checkbox" id="remember_me" name="remember_me">
+                    <label for="remember_me">Remember me</label>
+                    <a href="#" class="forgot_password">Forgot Password?</a>
+                </div>
+
+                <input type="submit" value="Sign in">
+
+                <button class="google-signin" type="button"><i class="bx bxl-google"></i> Sign in with Google</button>
+
+                <p class="dont-have-account">Don't have an account? <a href="#" id="singupLink">Sign up for free!</a>
+                </p>
+            </form>
+        </div>
+
+        <div class="signup-box" id="signupSection">
+            <h1>WELCOME</h1>
+            <h4>Welcome! Please enter your details.</h4>
+            <form action="process_login.php" method="post" onsubmit="return redirectToLandingPage()">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+
+                <div class="i_aggree">
+                    <input type="checkbox" id="i_aggree" name="i_aggree">
+                    <label for="i_aggree">I aggree to the terms & conditions</label>
+                </div>
+
+                <input type="submit" value="Sign up">
+
+                <button class="google-signin" type="button"><i class="bx bxl-google"></i> Sign up with Google</button>
+
+                <p class="dont-have-account">Already have an account? <a href="#" id="loginLink">Login!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script_login.js"></script>
+</body>
+
+</html>

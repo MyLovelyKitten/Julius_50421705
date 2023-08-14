@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>The Traveler - Travel Agency</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">The Traveler</a>
+
+        <ul class="navbar">
+            <li class="nav-link"><a href="#home" class="nav-list">Home</a></li>
+            <li class="nav-link"><a href="#booking" class="nav-list">Booking</a></li>
+            <li class="nav-link"><a href="#destination" class="nav-list">Destination</a></li>
+            <li class="nav-link"><a href="#services" class="nav-list">Services</a></li>
+            <li class="nav-link"><a href="#gallery" class="nav-list">Gallery</a></li>
+            <li class="nav-link"><a href="#contact-us" class="nav-list">Contact us</a></li>
+        </ul>
+
+        <a href="../Login Page/index_login.html" class="login-btn">Login</a>
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="content-1">
+            <h1>Welcome to The Traveler</h1>
+            <p>Your Journey Begins Here</p>
+            <a href="#" class="home-btn" id="promoLink">Check Our Promo</a>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="content-2">
+            <h2>Book Your Dream Vacation</h2>
+            <p>Discover the world with The Traveler's expertly crafted travel packages. Whether you're seeking
+                adventure, relaxation, or cultural experiences, we have the perfect journey for you.</p>
+            <a href="#" class="booking-btn" id="bookingButton">Book Now</a>
+
+            <div class="booking-box" id="bookingBox" style="display: none;">
+                <div class="booking-location" id="bookingLocation">
+                    <label for="location">Destination :</label>
+                    <select name="location" id="location">
+                        <option value="destination1">Destination 1</option>
+                        <!-- more destination -->
+                    </select>
+                </div>
+                <div class="booking-date">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="booking-ticket">
+                    <label for="ticketQuantity">Quantity :</label>
+                    <input type="number" id="ticketQuantity" name="ticketQuantity">
+                </div>
+                <a href="#" class="submit-btn" id="submitButton">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="destination" class="destination">
+        <div class="content-3">
+            <h2>Explore Breathtaking Destinations</h2>
+            <p>Embark on a journey to discover breathtaking landscapes, vibrant cultures, and hidden gems. From stunning
+                beaches and lush jungles to historic cities and charming villages, our curated destinations promise
+                unforgettable experiences for every traveler.</p>
+
+            <div class="destination-boxes">
+                <div class="destination-box">
+                    <img src="images/Indonesia_destination1.jpg" alt="Destination 1">
+                    <h3>Indonesia</h3>
+                    <p>Indonesia, negara kepulauan terbesar di dunia, menawarkan keindahan alam dari pulau-pulau tropis,
+                        pantai, dan budaya yang beragam.</p>
+                    <a href="#" class="read-more">Read More ></a>
+                </div>
+                <div class="destination-box">
+                    <img src="images/Malaysia_destination2.jpg" alt="Destination 2">
+                    <h3>Malaysia</h3>
+                    <p>Malaysia, dengan modernitas kota Kuala Lumpur dan kekayaan alamnya, merupakan kombinasi menarik
+                        antara perkotaan dan alam.</p>
+                    <a href="#" class="read-more">Read More ></a>
+                </div>
+                <div class="destination-box">
+                    <img src="images/London_destination3.jpg" alt="Destination 3">
+                    <h3>London</h3>
+                    <p>London, ibu kota Inggris, memiliki sejarah yang kaya, arsitektur ikonik, dan museum-museum dunia
+                        yang terkenal.</p>
+                    <a href="#" class="read-more">Read More ></a>
+                </div>
+                <div class="destination-box">
+                    <img src="images/Paris_destination4.jpg" alt="Destination 4">
+                    <h3>Paris</h3>
+                    <p>Paris, "Kota Cinta," memikat dengan pesona romantisisme, ikon Menara Eiffel, seni yang kaya, dan
+                        keindahan arsitektur klasiknya.</p>
+                    <a href="#" class="read-more">Read More ></a>
+                </div>
+            </div>
+            <a href="" class="view-more" id="viewMore">View More ></a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="content-4">
+            <h2>Our Services</h2>
+            <p>Discover our range of services that cater to your travel needs, ensuring a seamless and memorable
+                journey.</p>
+
+            <div class="service-boxes">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bxs-plane-alt'></i>
+                    </div>
+                    <h3>Flight Booking</h3>
+                    <p>Effortlessly book your flights to various destinations with our expert assistance.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-hotel'></i>
+                    </div>
+                    <h3>Accommodation</h3>
+                    <p>Choose from a wide range of accommodations that suit your preferences and budget.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-walk'></i>
+                    </div>
+                    <h3>Tour Guide</h3>
+                    <p>Experience the best of each destination with our knowledgeable tour guides.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-credit-card'></i>
+                    </div>
+                    <h3>Easy Payment</h3>
+                    <p>Secure and hassle-free payment options for your convenience.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-medal'></i>
+                    </div>
+                    <h3>Premium Service</h3>
+                    <p>Enjoy premium service that add an extra touch of luxury to your journey.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-globe'></i>
+                    </div>
+                    <h3>Global Destination</h3>
+                    <p>Explore a diverse range of destination arround the world with curated travel packages.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-support'></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>24/7 customer support to assist you with any inquiries or issues during your journey.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <h3>Custom Travel Plan</h3>
+                    <p>Personalized travel plan that cater to your specific interests and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="content-5">
+            <h2>Explore Our Gallery</h2>
+            <p>Discover the incredible moments captured by fellow travelers during their journeys with us.</p>
+
+            <div class="image-gallery">
+                <div class="image-box">
+                    <img src="images/Gallery1.jpg" alt="Image 1">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery2.jpg" alt="Image 2">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery3.jpg" alt="Image 3">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery4.jpg" alt="Image 4">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery5.jpg" alt="Image 5">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery6.jpg" alt="Image 6">
+                </div>
+                <div class="image-box">
+                    <img src="images/Gallery7.jpg" alt="Image 7">
+                </div>
+                <!-- Add more image-box elements for additional images -->
+            </div>
+
+            <h2>Discover Through Our Guests' Eyes</h2>
+            <p>Take a look at what our satisfied travelers have to say about their unforgettable experiences.</p>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="images/Face1.jpg" alt="Testimonial 1">
+                    <h4>John Doe</h4>
+                    <p>"I had the most amazing trip of my life! The breathtaking scenery and expertly planned itinerary
+                        made it an unforgettable experience."</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/Face2.jpg" alt="Testimonial 2">
+                    <h4>Jane Smith</h4>
+                    <p>"The Traveler's service was impeccable. Every detail was taken care of, allowing me to fully
+                        relax and
+                        enjoy my vacation."</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/Face3.jpg" alt="Testimonial 3">
+                    <h4>David Johnson</h4>
+                    <p>"Such an incredible journey! I can't thank The Traveler enough for making this trip truly
+                        unforgettable."</p>
+                </div>
+                <!-- Add more testimonials here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contactUs" class="contactUs">
+        <div class="content-6">
+            <h2>Contact us</h2>
+            <p>If you have any questions or inquiries, feel free to get in touch with us. Our dedicated team is here to
+                assist you.</p>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>The Traveler</h3>
+                <p>Your Journey Begins Here. Explore the world with The Traveler, your trusted travel agency. We provide
+                    expertly crafted travel packages for every type of adventurer.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#home"><i class="bx bx-chevron-right"></i> Home</a></li>
+                    <li><a href="#booking"><i class="bx bx-chevron-right"></i> Booking</a></li>
+                    <li><a href="#destination"><i class="bx bx-chevron-right"></i> Destination</a></li>
+                    <li><a href="#services"><i class="bx bx-chevron-right"></i> Services</a></li>
+                    <li><a href="#gallery"><i class="bx bx-chevron-right"></i> Gallery</a></li>
+                    <li><a href="#contact-us"><i class="bx bx-chevron-right"></i> Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><i class="bx bxl-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/j.e.1.4.7/"><i class="bx bxl-instagram"></i> Instagram</a>
+                    </li>
+                    <li><a href="https://twitter.com"><i class="bx bxl-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/julius-e-956372194/"><i class="bx bxl-linkedin"></i>
+                            LinkedIn</a></li>
+                    <li><a href="https://www.pinterest.com"><i class="bx bxl-pinterest"></i> Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><a href="https://api.whatsapp.com/send?phone=081380520565"><i class="bx bxs-phone"></i>
+                            +62-813-8052-0565</a></li>
+                    <li><a href="mailto:email@domain.com"><i class="bx bxs-envelope"></i> Juliusemmanuel
+                            147@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 The Traveler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <section id="promo" class="promo">
+        <div class="promo-content">
+            <h2>Hot Promos</h2>
+            <p>Discover our hottest travel promotions that will make your journey even more exciting.</p>
+
+            <div class="promo-boxes">
+                <div class="promo-box">
+                    <div class="promo-badge-bg"></div>
+                    <div class="promo-badge">
+                        25%
+                        Discount
+                    </div>
+                    <img src="images/MachuPicchu_promo1.jpg" alt="Promo 1">
+                    <h3>Machu Picchu - Peru</h3>
+                    <p>Situs arkeologi indah di Pegunungan Andes, Peru, dikenal sebagai "Kota yang Hilang" Suku Inca.</p>
+                    <a href="#" class="promo-link">Learn More ></a>
+                </div>
+                <div class="promo-box">
+                    <div class="promo-badge-bg"></div>
+                    <div class="promo-badge">
+                        45%
+                        Discount
+                    </div>
+                    <img src="images/Colloseum_promo2.jpg" alt="Promo 2">
+                    <h3>Colloseum - Roma</h3>
+                    <p>Arena kuno di Roma, Italia, tempat pertunjukan gladiator dan acara besar Romawi.</p>
+                    <a href="#" class="promo-link">Learn More ></a>
+                </div>
+                <div class="promo-box">
+                    <div class="promo-badge-bg"></div>
+                    <div class="promo-badge">
+                        30%
+                        Discount
+                    </div>
+                    <img src="images/BoraBora_promo3.jpg" alt="Promo 3">
+                    <h3>Bora Bora - Prancis</h3>
+                    <p>Pulau karang cantik di Polinesia Prancis dengan laguna biru, terumbu karang, dan bungalow mengapung mewah.</p>
+                    <a href="#" class="promo-link">Learn More ></a>
+                </div>
+                <!-- Add more promo boxes for additional promos -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
